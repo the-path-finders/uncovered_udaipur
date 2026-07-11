@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<title>Uncovered Udaipur | Explore Hidden Gems & Events</title>
+
+<meta name="description" content="Discover hidden gems, cafés, lakes, trekking spots, heritage places and exciting community events in Udaipur.">
+
+<meta name="keywords" content="Udaipur, Rajasthan, Hidden Places, Cafes, Events, Travel, Explore Udaipur, Trekking">
+
+<meta name="author" content="Uncovered Udaipur">
+
+<meta name="theme-color" content="#f59e0b">
+
+<meta property="og:title" content="Uncovered Udaipur">
+
+<meta property="og:description" content="Explore the City of Lakes like never before.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:image" content="images/logo.png">
+
+<meta property="og:url" content="https://yourwebsite.com">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= LOADER ================= -->
+
+<div id="loader">
+
+<div class="loader-circle"></div>
+
+<h2>UNCOVERED UDAIPUR</h2>
+
+</div>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav id="navbar">
+
+<div class="logo">
+
+<img src="images/logo.png" alt="Uncovered Udaipur Logo">
+
+<h2>Uncovered Udaipur</h2>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#featured">Places</a></li>
+
+<li><a href="#hidden">Hidden Gems</a></li>
+
+<li><a href="#events">Events</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="menu-toggle">
+
+<i class="fas fa-bars"></i>
+
+</div>
+
+<div class="nav-right">
+
+<button id="theme-toggle" title="Dark / Light Mode">
+
+<i class="fas fa-moon"></i>
+
+</button>
+
+<a href="#" class="btn">Join Community</a>
+
+</div>
+
+</nav>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+<video autoplay muted loop playsinline class="hero-video">
+
+<source src="videos/hero.mp4" type="video/mp4">
+
+</video>
+
+<div class="overlay"></div>
+
+<div class="hero-slider">
+
+<img class="slide active" src="images/slider1.jpg">
+
+<img class="slide" src="images/slider2.jpg">
+
+<img class="slide" src="images/slider3.jpg">
+
+<img class="slide" src="images/slider4.jpg">
+
+</div>
+
+<div class="hero-content">
+
+<div class="location-badge">
+
+<i class="fas fa-location-dot"></i>
+
+UDAIPUR # RAJASTHAN
+
+</div>
+
+<h1>
+
+Discover the Soul of
+
+<span>Udaipur</span>
+
+</h1>
+
+<p>
+
+Hidden places ! Heritage ! Food ! Cafes ! Sunsets ! Adventures
+
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Places, Cafes, Lakes...">
+
+<button>
+
+<i class="fas fa-search"></i>
+
+Explore
+
+</button>
+
+</div>
+
+<div class="hero-buttons">
+
+<a href="#featured" class="hero-btn">
+
+Explore Places
+
+</a>
+
+<a href="#events" class="btn">
+
+Upcoming Events
+
+</a>
+
+</div>
+
+<div class="scroll-indicator">
+
+<i class="fas fa-angle-down"></i>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="about">
+
+<h2>About Uncovered Udaipur</h2>
+
+<p>
+
+Uncovered Udaipur is a community that helps people discover
+the unexplored side of the City of Lakes.
+
+Our mission is to showcase hidden destinations,
+weekend adventures,
+local cafes,
+beautiful viewpoints,
+and unforgettable experiences.
+
+</p>
+
+</section>
+
+<!-- ================= FEATURED ================= -->
+
+<section id="featured" class="explore">
+
+<h2>Explore Udaipur</h2>
+
+<p class="section-subtitle">
+Find the best places across the City of Lakes.
+</p>
+
+<div class="filter-buttons">
+
+<button class="filter-btn active" data-filter="all">All</button>
+
+<button class="filter-btn" data-filter="lake">Lakes</button>
+
+<button class="filter-btn" data-filter="heritage">Heritage</button>
+
+<button class="filter-btn" data-filter="cafe">Cafes</button>
+
+<button class="filter-btn" data-filter="nature">Nature</button>
+
+</div>
+
+<div class="explore-grid">
+
+<div class="explore-card"
+data-category="lake"
+data-name="lake pichola">
+
+<img src="images/lake-pichola.jpg">
+
+<div class="explore-info">
+
+<h3>Lake Pichola</h3>
+
+<p>Boat rides, sunsets and city views.</p>
+
+<span> 4.9</span>
+
+</div>
+
+</div>
+
+<div class="explore-card"
+data-category="heritage"
+data-name="city palace">
+
+<img src="images/city-palace.jpg">
+
+<div class="explore-info">
+
+<h3>City Palace</h3>
+
+<p>Royal architecture and museum.</p>
+
+<span> 4.8</span>
+
+</div>
+
+</div>
+
+<div class="explore-card"
+data-category="nature"
+data-name="monsoon palace">
+
+<img src="images/sajjangarh.jpg">
+
+<div class="explore-info">
+
+<h3>Monsoon Palace</h3>
+
+<p>Perfect sunset destination.</p>
+
+<span> 4.9</span>
+
+</div>
+
+</div>
+
+<div class="explore-card"
+data-category="cafe"
+data-name="sunset cafe">
+
+<img src="images/cafe.jpg">
+
+<div class="explore-info">
+
+<h3>Sunset Cafe</h3>
+
+<p>Great food with a lake view.</p>
+
+<span> 4.7</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= EVENTS ================= -->
+
+<section id="events" class="events">
+
+<h2>Upcoming Events</h2>
+
+<p class="section-subtitle">
+Join our community and explore Udaipur like never before.
+</p>
+
+<div class="events-grid">
+
+<div class="event-card">
+
+<div class="event-date">
+
+<span>15</span>
+
+<small>JUL</small>
+
+</div>
+
+<img src="images/event1.jpg" alt="Morning Trek">
+
+<div class="event-content">
+
+<h3>Morning Trek</h3>
+
+<p>PLACE -Bahubali Hills</p>
+
+<p>TIME -6:00 AM</p>
+
+<p>OBJECTIVE -Beginner Friendly</p>
+
+<a href="#" class="hero-btn">Register Now</a>
+
+</div>
+
+</div>
+
+<div class="event-card">
+
+<div class="event-date">
+
+<span>22</span>
+
+<small>JUL</small>
+
+</div>
+
+<img src="images/event2.jpg" alt="Photography Walk">
+
+<div class="event-content">
+
+<h3>Photography Walk</h3>
+
+<p>PLACE Gangaur Ghat</p>
+
+<p>TIME 7:00 AM</p>
+
+<p>SUGGESTIONS  Bring Your Camera</p>
+
+<a href="#" class="hero-btn">Register Now</a>
+
+</div>
+
+</div>
+
+<div class="event-card">
+
+<div class="event-date">
+
+<span>16</span>
+
+<small>JUL</small>
+
+</div>
+
+<img src="images/event3.jpg" alt="Rath Yatra">
+
+<div class="event-content">
+
+<h3></h3>
+
+<p>PLACE -Jagdish Chowk</p>
+
+<p>TIME -2:30 PM</p>
+
+<p>NOTE -Open For Everyone</p>
+
+<a href="#" class="hero-btn">Register Now</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery" class="gallery">
+
+<h2>Photo Gallery</h2>
+
+<p class="section-subtitle">
+Every picture tells a story of the City of Lakes.
+</p>
+
+<div class="gallery-container">
+
+<img src="images/gallery1.jpg" onclick="openImage(this.src)">
+<img src="images/gallery2.jpg" onclick="openImage(this.src)">
+<img src="images/gallery3.jpg" onclick="openImage(this.src)">
+<img src="images/gallery4.jpg" onclick="openImage(this.src)">
+<img src="images/gallery5.jpg" onclick="openImage(this.src)">
+<img src="images/gallery6.jpg" onclick="openImage(this.src)">
+<img src="images/gallery7.jpg" onclick="openImage(this.src)">
+<img src="images/gallery8.jpg" onclick="openImage(this.src)">
+
+</div>
+
+</section>
+
+<!-- Lightbox -->
+
+<div id="lightbox">
+
+<span onclick="closeImage()">&times;</span>
+
+<img id="lightbox-img">
+
+</div>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Message"></textarea>
+
+<button>
+
+Send Message
+
+</button>
+
+</form>
+
+</section>
+<!-- ================= HIDDEN GEMS ================= -->
+
+<section id="hidden" class="hidden-gems">
+
+<h2>Hidden Gems of Udaipur</h2>
+
+<p class="section-subtitle">
+Discover beautiful places that most tourists never visit.
+</p>
+
+<div class="gems-container">
+
+<div class="gem-card">
+
+<img src="images/gem1.jpg" alt="Badi Lake">
+
+<div class="gem-content">
+
+<span class="tag"> Sunset Spot</span>
+
+<h3>Badi Lake</h3>
+
+<p>
+A peaceful lake surrounded by hills. Perfect for photography,
+cycling and relaxing evenings.
+</p>
+
+<div class="gem-info">
+
+<span> 4.9</span>
+
+<span> 12 km</span>
+
+<span> Evening</span>
+
+</div>
+
+<a href="#" class="hero-btn">View Details</a>
+
+</div>
+
+</div>
+
+<div class="gem-card">
+
+<img src="images/gem2.jpg" alt="Ubeshwar Ji">
+
+<div class="gem-content">
+
+<span class="tag">Nature</span>
+
+<h3>Ubeshwar Ji</h3>
+
+<p>
+A scenic drive through the Aravalli hills with temples,
+greenery and peaceful surroundings.
+</p>
+
+<div class="gem-info">
+
+<span> 4.8</span>
+
+<span> 18 km</span>
+
+<span> Drive</span>
+
+</div>
+
+<a href="#" class="hero-btn">View Details</a>
+
+</div>
+
+</div>
+
+<div class="gem-card">
+
+<img src="images/gem3.jpg" alt="Rayta Hills">
+
+<div class="gem-content">
+
+<span class="tag"> Trek</span>
+
+<h3>Rayta Hills</h3>
+
+<p>
+One of the best sunrise points near Udaipur with panoramic
+views of the surrounding hills.
+</p>
+
+<div class="gem-info">
+
+<span> 4.9</span>
+
+<span> 22 km</span>
+
+<span> Sunrise</span>
+
+</div>
+
+<a href="#" class="hero-btn">View Details</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+<div class="stat-box">
+<h2 class="counter" data-target="100">0</h2>
+<p>Hidden Places</p>
+</div>
+
+<div class="stat-box">
+<h2 class="counter" data-target="50">0</h2>
+<p>Events</p>
+</div>
+
+<div class="stat-box">
+<h2 class="counter" data-target="10000">0</h2>
+<p>Community Members</p>
+</div>
+
+<div class="stat-box">
+<h2 class="counter" data-target="1000000">0</h2>
+<p>Views</p>
+</div>
+
+</section>
+
+<!-- ================= TEAM ================= -->
+
+<section class="team">
+
+<h2>Our Team</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="images/team1.jpg">
+<h3>Founder</h3>
+<p>Visionary behind Uncovered Udaipur.</p>
+</div>
+
+<div class="card">
+<img src="images/team2.jpg">
+<h3>Co-Founder</h3>
+<p>Capturing the beauty of Udaipur.</p>
+</div>
+
+<div class="card">
+<img src="images/team3.jpg">
+<h3>Explorer</h3>
+<p>Finding hidden places every week.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+<h2>Stay Updated</h2>
+
+<p>Subscribe to receive updates about new places and upcoming events.</p>
+
+<form>
+
+<input type="email" placeholder="Enter your email">
+
+<button>Subscribe</button>
+
+</form>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials">
+
+<h2>What People Say</h2>
+
+<p class="section-subtitle">
+Experiences shared by our amazing explorers.
+</p>
+
+<div class="testimonial-container">
+
+<div class="testimonial-card">
+
+<img src="images/user1.jpg" alt="User">
+
+<h3>Rahul Sharma</h3>
+
+<div class="stars">
+
+</div>
+
+<p>
+"One of the best communities in Udaipur! Every weekend brings a new adventure."
+</p>
+
+</div>
+
+<div class="testimonial-card">
+
+<img src="images/user2.jpg" alt="User">
+
+<h3>Anjii Salvi</h3>
+
+<div class="stars">
+
+</div>
+
+<p>
+"I discovered places I never knew existed. Highly recommended!"
+</p>
+
+</div>
+
+<div class="testimonial-card">
+
+<img src="images/user3.jpg" alt="User">
+
+<h3>Aman Jain</h3>
+
+<div class="stars">
+
+</div>
+
+<p>
+"Beautiful photography, amazing events and wonderful people."
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<p class="section-subtitle">
+Everything you need to know before joining us.
+</p>
+
+<div class="faq-container">
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+Who can join the events?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Anyone! Whether you're a student, working professional, tourist, or local resident, everyone is welcome.
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+Are the events free?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Some events are completely free, while others may have a small participation fee depending on the activity.
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+How do I register?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Simply click the "Register Now" button on an event or contact us through WhatsApp or Instagram.
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+What should I bring?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Comfortable shoes, water bottle, positive attitude, and your camera if you love photography.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+<!-- ================= WEATHER ================= -->
+
+<section class="weather-section">
+
+<h2>Current Weather in Udaipur</h2>
+
+<div class="weather-card">
+<div class="weather-icon" id="weatherIcon">
+<i class="fas fa-cloud-sun"></i>
+</div>
+
+<h3 id="city">Udaipur</h3>
+
+<h1 id="temperature">--°C</h1>
+
+<p id="condition">Loading...</p>
+
+<div class="weather-info">
+
+<div>
+<p>Humidity</p>
+<h4 id="humidity">--%</h4>
+</div>
+
+<div>
+<p>Wind</p>
+<h4 id="wind">-- km/h</h4>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<div class="footer-container">
+
+<div class="footer-box">
+
+<h2>Uncovered Udaipur</h2>
+
+<p>
+Discover hidden gems, cafes, lakes, heritage sites, and unforgettable experiences across the City of Lakes.
+</p>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#featured">Explore</a></li>
+
+<li><a href="#events">Events</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Contact</h3>
+
+<p>Udaipur, Rajasthan</p>
+
+<p>+91 94619 55125</p>
+
+<p>hello@uncoveredudaipur.in</p>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Follow Us</h3>
+
+<div class="social-links">
+
+<a href="uncovered_udaipur"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+ © 2026 Uncovered Udaipur | Designed with ??
+
+</p>
+
+</footer>
+
+<!-- ================= FLOATING BUTTONS ================= -->
+
+<a href="https://wa.me/919461955125"
+class="whatsapp-btn"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<button id="topBtn">
+
+<i class="fas fa-arrow-up"></i>
+
+</button>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
